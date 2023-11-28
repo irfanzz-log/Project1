@@ -5,7 +5,7 @@
 
 }
 .container{
-    outline: 2px solid gray;
+    
     position: static;
     display: flex;
     flex-direction: column;
@@ -14,6 +14,7 @@
     margin: 30px 10px;
     padding: 20px;
     float: left;
+    border: 1px solid gray;
     border-radius: 15px;
     align-items: center;
     overflow-y: auto;
