@@ -1,0 +1,85 @@
+/* box content */
+.box1, .box2{
+    display: flex;
+    justify-content: center;
+
+}
+.container{
+    outline: 2px solid gray;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    height: 400px;
+    margin: 30px 10px;
+    padding: 20px;
+    float: left;
+    border-radius: 15px;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.container img{
+    display: flex;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container p{
+    margin-top: 50px;
+}
+.container a{
+    text-decoration: none;
+    color: black;
+}
+.container:hover{
+    background-color: greenyellow;
+    box-shadow: 3px 3px 3px 1px black;
+}
+.container img{
+    display: flex;
+    margin: 10px;
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+    .container{
+        width: 30%;
+        margin: 10px;
+        font-size: medium;
+
+    }
+    .container img{
+        display: flex;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+}
+
+@media screen and (max-width: 576px) {
+    .container{
+        width: 80%;
+        float:none;
+        margin: 30px 10px;
+
+    }
+    .container img{
+        display: flex;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .box1, .box2{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .box2{
+        margin-bottom: -350px;
+    }
+
+    
+}
